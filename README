@@ -1,0 +1,3 @@
+Formhook is a simple library to hook an HTML form's onsubmit method with a custom callback that will be triggered prior to the actual onsubmit code.
+
+See sample/hook.html for an example of how to use it.
