@@ -1,5 +1,5 @@
 <head>
-    <script src="hook.js"></script>
+    <script src="formhook.js"></script>
     <script>
         function validate_form(thisform)
         {            
@@ -21,19 +21,18 @@
         {
             hookform(document.getElementById('f1'), hook_callback);
             hookform(document.getElementById('f2'), hook_callback);
-       
         }
         
     </script>
 </head>
 <body onload="load()" >
-    <form id="f1" action="post.php" method="post" onsubmit="return validate_form(this);">
+    <form id="f1" action="action.php" method="get" onsubmit="return validate_form(this);">
         <input type="text" name="foo" /><br />
         <input type="text" name="bar" /><br />
         <input type="submit" value="Submit" />
     </form>
     <br />
-    <form id="f2" action="post.php" method="post" onsubmit="return validate_form(this);">
+    <form id="f2" action="action.php" method="post" onsubmit="return validate_form(this);">
         <input type="text" name="foo" /><br />
         <input type="text" name="bar" /><br />
         <input type="submit" value="Submit" />
